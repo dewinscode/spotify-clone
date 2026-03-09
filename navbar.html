@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distributors provider Bharat Ka Distributor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #121212;
+      color: #e9e9e9;
+    }
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #262626;
+      padding: 0 1.5em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      height: 64px;
+    }
+    .navbar .logo-img {
+      height: 44px;
+      width: auto;
+      margin-right: 12px;
+      border-radius: 50%;
+      vertical-align: middle;
+      background: #232323;
+    }
+    .navbar .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-size: 1.28em;
+      font-weight: 700;
+      color: #FFD600;
+      letter-spacing: .03em;
+      text-decoration: none;
+    }
+    .navbar .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+    .navbar .nav-links a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 10px 6px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .navbar .nav-links a:hover {
+      background: #FFD600;
+      color: #232323;
+    }
+    .navbar .icon {
+      display: none;
+      color: #FFD600;
+      font-size: 2.1em;
+      cursor: pointer;
+    }
+    @media (max-width: 760px) {
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        width: 100%;
+        background: #232323;
+        padding: 12px 0;
+        gap: 0;
+        z-index: 9;
+      }
+      .navbar .nav-links.active {
+        display: flex;
+      }
+      .navbar .icon {
+        display: block;
+      }
+    }
+    /* Existing styles for the rest of your content */
+    .logo-row {
+      margin: 36px 0 8px 0;
+      text-align: center;
+    }
+    .brand-title {
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #FFD600;
+    }
+    .subtitle {
+      color: #FFD600;
+      font-size: 1em;
+      font-weight: 400;
+    }
+    .highlight {
+      color: #FFD600;
+      font-weight: 700;
+    }
+    .card {
+      background: #232323;
+      border-radius: 16px;
+      margin: 22px auto 32px auto;
+      max-width: 700px;
+      padding: 28px 20px;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+    }
+    .hero {
+      text-align: center;
+    }
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 16px;
+      margin-bottom: 18px;
+    }
+    .stat-box {
+      font-size: 1.15em;
+      color: #FFD600;
+      font-weight: 700;
+      background: #191919;
+      padding: 12px 22px;
+      border-radius: 9px;
+      box-shadow: 0 1px 6px #0001;
+      margin-bottom: 6px;
+    }
+    .register-btn, .button {
+      background: #FFD600;
+      color: #232323;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 14px;
+      display: inline-block;
+    }
+    .button:hover, .register-btn:hover {
+      background: #ffe651;
+    }
+    .categories-row {
+      display: flex;
+      gap: 22px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1em;
+    }
+    .category-card {
+      width: 195px;
+      min-height: 80px;
+      background: #191919;
+      border-left: 5px solid #FFD600;
+      border-radius: 8px;
+      color: #FFF;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 7px #0002;
+    }
+    .category-title {
+      font-size: 1.12em;
+      color: #FFD600;
+      font-weight: 600;
+    }
+    .category-desc {
+      margin-top: 8px;
+      font-size: .96em;
+      color: #d9d9d9;
+    }
+    footer {
+      background: #232323;
+      padding: 18px;
+      text-align: center;
+      color: #ffd600;
+      font-size: 1em;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR START -->
+<nav class="navbar">
+  <a href="#" class="navbar-brand">
+    <img src="dblogo.png.jpeg" alt="Logo" class="logo-img">
+    Distributors provider
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="navbar.html">Home</a>
+    <a href="#brands">Brands</a>
+    <a href="categorytest.html">Categories</a>
+    <a href="#about">About</a>
+    <a href="contactpage.html">Contact</a>
+    <a href="loginpage2.html">Register</a>
+  </div>
+  <span class="icon" onclick="toggleNavbar()">&#9776;</span>
+</nav>
+<!-- NAVBAR END -->
+
+<header>
+  <div class="logo-row">
+    <img src="dblogo.png.jpeg" alt="Logo" class="logo-img">
+    <span class="brand-title">Distributors provider</span><br>
+    <span class="subtitle"><br>all type of <span style="font-size:.97em;"> b2b</span></span>
+  </div>
+  <div>
+    <span class="highlight">Result-Driven Approach:</span>
+    We focus on delivering measurable, tangible results, ensuring that every step of our process leads to real growth for your brand.
+  </div>
+</header>
+
+<div class="card hero">
+  <h2>Increase Your Sales With Our Distribution &amp; Buyer Generation Strategies</h2>
+  <div class="stats-row">
+    <div class="stat-box">10K+<br><span style="font-size:.875em;font-weight:400;">Brands</span></div>
+    <div class="stat-box">5 Lac+<br><span style="font-size:.875em;font-weight:400;">Distributors</span></div>
+    <div class="stat-box">1800+<br><span style="font-size:.875em;font-weight:400;">Categories</span></div>
+  </div>
+  <a class="register-btn" href="loginpage2.html">Register Now</a>
+</div>
+
+<section class="section">
+  <h2 style="text-align:center;margin-bottom:18px;">Top Brands Across <span class="highlight">All Categories</span></h2>
+  <div class="categories-row">
+    <div class="category-card">
+      <div class="category-title">Food &amp; Beverages</div>
+      <div class="category-desc">Food - Staples, FMCG, Fruits &amp; Vegetables, Meat, Eggs</div>
+    </div>
+    <div class="category-card">
+      <div class="category-title">Chemicals</div>
+      <div class="category-desc">Detergent, Housekeeping, Paints, Soaps</div>
+    </div>
+    <div class="category-card">
+      <div class="category-title">Health &amp; Beauty</div>
+      <div class="category-desc">Cosmetics, Herbal Soaps, Sunscreen, Face Wash</div>
+    </div>
+    <div class="category-card">
+      <div class="category-title">Pharmaceuticals</div>
+      <div class="category-desc">Medicines, OTC, Ayurvedic, Herbal</div>
+    </div>
+  </div>
+  <a href="#" class="button">More Category</a>
+</section>
+
+<div class="card">
+  <h2>Let's Scale Your Brand Together</h2>
+  <p>
+    At <span class="highlight">Bharat Ka Distributor</span>, our mission is to help you expand your brand’s reach, drive demand, and establish strong distributor relationships. With our <span class="highlight">Buyer Generation Marketing</span> and <span class="highlight">Distribution Expansion</span> strategies, we can take your brand to the next level. Contact us today to learn more about how to grow your business.
+  </p>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+  <section class="section step-section" style="text-align: center;">
+    <h2>Expand your Distributor Network &amp; Generate Buyers in three simple steps</h2>
+    <img src="3step.png" class="step-img" alt="Step icon" width="350px" height="100px">
+    <h3>Register Your Account</h3>
+    <p>Register using your mobile number. Enter your Company Name, Product Details, and Pincode.</p>
+    <a href="#" class="register-btn" style="margin-top: 16px;">Register Now</a>
+  </section>
+</div>
+
+
+<section class="section">
+  <h2>How We Help Brands Grow</h2>
+  <ul style="font-size:1.01em;">
+    <li><span class="highlight">Trust and Confidence:</span> Strong branding, testimonials, and trials.</li>
+    <li><span class="highlight">Distributor Appointment:</span> Recruitment, agreements, appointing sales teams.</li>
+    <li><span class="highlight">Distribution Reach:</span> 5+ lakh distributor database, daily registrations, expos, targeted ads.</li>
+    <li><span class="highlight">End-to-End Support:</span> Business Development Managers (BDMs) manage conversion, onboarding, and growth.</li>
+  </ul>
+</section>
+
+<footer>
+  distributorprovider.com &nbsp; | &nbsp; © 2025 RC pro business buddies pvt.ltd.
+</footer>
+
+<script>
+  function toggleNavbar() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+</script>
+</body>
+</html>
